@@ -9,7 +9,7 @@ const map = (array, actionOnArray) => {
     newArray = [];
 
     for(i=0; i<array.length;i++){
-        newArray.push(array[actionOnArray(i)]);
+        newArray.push(actionOnArray(array[i]));
     }
 
     return newArray;
