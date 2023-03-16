@@ -6,9 +6,13 @@ const addS = (input)=> input + 's';
 
 //callback and higher order function
 const map = (array, actionOnArray) => {
-    array.forEach(element => {
-        return actionOnArray(element);    
-    });
+    newArray = [];
+
+    for(i=0; i<array.length;i++){
+        array.push(array[actionOnArray(i)]);
+    }
+
+    return newArray;
 } 
 
 const multiplyBy2 = (input) =>{
