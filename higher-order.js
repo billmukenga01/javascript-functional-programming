@@ -8,9 +8,13 @@ const addS = (input)=> input + 's';
 const map = (array, actionOnArray) => {
     newArray = [];
 
-    for(i=0; i<array.length;i++){
-        newArray.push(actionOnArray(array[i]));
-    };
+    array.forEach(element => {
+        newArray.push(actionOnArray(element));      
+    });
+
+    //for(i=0; i<array.length;i++){
+    //    newArray.push(actionOnArray(array[i]));
+    //};
 
     return newArray;
 } ;
