@@ -19,7 +19,7 @@ const map = (array, actionOnArray) => {
     return newArray;
 } ;
 
-const multiplyBy2 = (input) => input*2;
+const multiplyBy2 = input => input*2;
 
 
 
