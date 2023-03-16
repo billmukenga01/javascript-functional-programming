@@ -7,7 +7,7 @@ const addS = (input)=> input + 's';
 //callback and higher order function
 const map = (array, actionOnArray) => {
     array.forEach(element => {
-        actionOnArray(element);    
+        return actionOnArray(element);    
     });
 } 
 
