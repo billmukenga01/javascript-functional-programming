@@ -14,3 +14,6 @@ const map = (array, actionOnArray) => {
 const multiplyBy2 = (input) =>{
     return input*2;
 }
+
+
+map([1,2,3,4,5,6], multiplyBy2);
